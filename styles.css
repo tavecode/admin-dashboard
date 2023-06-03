@@ -178,7 +178,10 @@ h3 {
 }
 .buttons button {
     padding: 1rem;
-    width: 5rem;
+    width: 8rem;
     border-radius: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    background-color: var(--w);
+    color: var(--b);
+    font-weight: 900;
 }
