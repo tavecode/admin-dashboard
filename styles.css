@@ -1,0 +1,110 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    display: grid;
+    grid-template: 1fr /*6fr*/4.5fr / 1fr 5fr;
+}
+
+.header {
+    background-color: navy;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.sidebar {
+    background-color: sienna;
+    grid-area: 1 / 1 / 3 / 2;
+   /* display: grid;
+    place-items: center;
+    gap: 0px;*/
+  /*  grid-template-rows: repeat(3, 1fr);*/
+   /* justify-content: center;*/
+}
+
+.sidebar h2,
+.sidebar h1,
+.sidebar ul,
+.sidebar li {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul {
+    margin: 2rem;
+    margin-top: 4rem;
+}
+
+.sidebar li {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.sidebar h1 {
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+/*.sidebar h1 {
+    margin:;
+}*/
+
+.content {
+    background-color: lightblue;
+    grid-area: 2 / 2 / 3 / 3;
+}
+.blockheader {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding: 0;
+}
+.blocks {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 12px
+}
+.block {
+    background-color: bisque;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.sideblocks * {
+    margin: 0;
+}
+.announcement {
+    padding: 1rem;
+}
+.sb2 {
+    background-color: bisque;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.maincontent {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 80px 1fr;
+}
+.sb1, .sb2 {
+    margin: 2rem;
+}
+.sb1 {
+    border-radius: 0.5rem;
+    background-color: bisque;
+}
+.sideblocks {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
