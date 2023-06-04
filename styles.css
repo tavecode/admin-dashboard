@@ -237,3 +237,11 @@ button, h2, h3 {
 #mainsearch:focus {
     background-color: white;
 }
+.maincontent {
+    box-shadow: inset 3px 3px 8px grey;
+}
+/*.sidebar, .header{box-shadow: inset 3px 3px 8px var();}*/
+/*.block {
+    box-shadow: 3px 3px 8px var(--med2);
+}
+.sb1, .sb2 {box-shadow: 3px 3px 8px var(--med2);}*/
