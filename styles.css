@@ -213,3 +213,27 @@ h3 {
     display: flex;
     align-items: center;
 }
+
+/* hover fx*/
+button:hover,
+h2:hover,
+h3:hover {
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: #6ee7b7;
+   /* text-shadow: 0px 3px 3px var(--w);*/
+}
+button, h2, h3 {
+    transition: 0.4s;
+}
+.searchicon {
+    font-size: 32px;
+}
+.search {
+    display: flex;
+}
+#mainsearch:focus {
+    background-color: white;
+}
